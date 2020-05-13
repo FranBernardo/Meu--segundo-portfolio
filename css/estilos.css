@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/fundo.jpg');
+  background-size: auto 100vh; 
+  font-family: Arial;
+  height: 100vh;
+  font-size: 10px;
+}
+
+@media (min-width: 400px) {
+body{
+  font-size: 14px;
+}
+}
+
+header{
+  height: 100vh; /* isso deixa a pagina na tela inteira, como se fosse dividida por placos*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+ list-style: none; 
+}
+/* isse codigo foi escrito para por*/
+.menu a{
+  display: block;
+  padding: 10px 20px;
+  
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-subtitle, 
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-title{
+  font-size: 4em;
+  font-family: 'Courgette', cursive;
+}
+
+.site-subtitle {
+ font-style: italic;
+}
+
+/* edição das imagens*/
+
+.img-portfolio{
+  height: 180px;
+  width: 240px;
+  object-fit: cover;/*para modificar a imagem e deixar mais nitida.para inquadra melhor.*/
+  object-position: center;
+}
+
+
+
+.projetos h2{
+  font-family: 'Courgette', cursive;
+  color: whitesmoke;
+  font-size: 2em;
+
+  margin-bottom: 1.8em;
+
+
+}
+
+.projetos .grid{
+  display: grid;
+  gap: 2em ; /* gap diz o espaçamento entre as linhas*/
+ 
+}
+
+@media (min-width: 560px){
+  .projetos .grid{
+   
+    grid-template-columns: 240px 240px; /* tamanho de cada coluna */
+}
+
+@media (min-width: 880px){
+  .projetos .grid{
+   grid-template-columns: repeat(3, 260px); /* tamanho de cada coluna */
+   justify-content: center;
+   align-content: center;
+   height: calc(100vh - 4em - 48px - 1.5em);
+}
+
+.projetos figure {
+  text-align: center;
+
+}
+
+.projetos{
+ padding: 2em;
+ height: 100vh;
+}
+
+@media (min-width: 1200px ) {
+  .img-portfolio{
+    height: 10em;
+    width: 100%;
+  }
+
+}
