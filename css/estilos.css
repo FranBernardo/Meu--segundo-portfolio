@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url('../img/fundo.jpg');
+  background-image: url('../img/ceu-estrelado.png');
   background-size: auto 100vh; 
   font-family: Arial;
   height: 100vh;
@@ -15,7 +15,11 @@ body {
 @media (min-width: 400px) {
 body{
   font-size: 14px;
+
+
 }
+
+
 }
 
 header{
@@ -69,8 +73,46 @@ a:hover {
 }
 
 .site-title{
-  font-size: 5em;
-  font-family: 'Courgette', cursive;
+  font-size: 10em;
+  font-family: 'PT Sans', sans-serif;
+}
+
+@media (min-width: 360px) {
+.site-title 
+  {
+  font-size: 4em;
+}
+.avatar img{
+ height: 356px;
+ width:250px;
+ margin-top: 20px;
+ position: relative;
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ 
+}
+}
+
+
+
+
+
+
+
+div, img .imageTopo{
+  position: absolute;
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  
+}
+.imageTopo{
+  height: 200px;
+  margin-top: -350px;
+  object-fit: cover;
+  object-position: center;
+  clip-path: circle(50% at 50% 50%);
 }
 
 .site-subtitle {
@@ -89,15 +131,29 @@ a:hover {
 .img-portfolio:hover{
   transform: scale(1.2) rotate(-2deg);
 }
+.sobre h2,
 .contato h2,
 .projetos h2{
   font-family: 'Courgette', cursive;
   color: whitesmoke;
   font-size: 4em;
-
   margin-bottom: 1.8em;
+}
 
-
+@media (min-width: 1200px){
+  .sobre ,
+.contato ,
+.projetos {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+.sobre p{
+  color: antiquewhite;
+  text-indent: 2em ;
+  margin-bottom: 2em;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .projetos .grid{
@@ -105,6 +161,44 @@ a:hover {
   gap: 2em ; /* gap diz o espaçamento entre as linhas*/
  
 }
+
+.sobre .avatar{
+  float: right ;
+  margin-left: 2em;
+}
+.sobre .avatar img{
+  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0% );
+}
+
+
+
+/*.card{
+  position: relative;
+  
+}
+.front, .back{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.back{
+  background-color: antiquewhite;
+height: 180px;
+width: 100%;
+
+}*/
+
+img{
+  height: 480px;
+  margin-top: -90px;
+ 
+}
+.sobre p{
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+}
+
+
 
 @media (min-width: 560px){
   .projetos .grid{
@@ -124,6 +218,7 @@ a:hover {
   text-align: center;
 
 }
+.sobre,
 .contato, 
 .projetos{
  padding: 2em;
@@ -137,18 +232,38 @@ a:hover {
   } 
 }
 
+
 .contato a{
   color: whitesmoke;
   font-size: 5em;
   cursor: pointer;
+  
 }
 
+.contato{
+  margin-top:7px;
+}
+
+.contato .icons{
+ text-align: center;
+ display: block;
+ justify-content: space-around;
+ margin-top:10px;
+
+}
+
+footer{
+  font-size: 25px;
+  color: antiquewhite;
+  text-align: center;
+  margin-top: 500px;
+}
 
 .contato a:hover{
   text-decoration: none;
   text-shadow: 0px 0px 10px whitesmoke;/*isso coloca sombra.*/
 }
-/* animação para amostra o titulo na tela*/
+ animação para amostra o titulo na tela
 .titulos{
   transform: scale(0.2) translateY(50vh);
   opacity: 0;

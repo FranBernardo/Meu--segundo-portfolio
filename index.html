@@ -6,62 +6,148 @@
   <title>Franciele Bernardo</title>
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"><!--sempre colocar o link das fontes em baixo do estilo,isso faz difereça-->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
 
   <script src="https://kit.fontawesome.com/b55b406ab0.js" crossorigin="anonymous"></script> <!--link para funcionar os icon do css -->
+
+
+  
+
+
 </head>
 <body>
   <header>
+	
+
+	
 		<nav class="menu">
 			<ul>
 				<li><a href="#">Sobre</a></li>
 				<li><a href="#projetos">Portfólio</a></li>
 				<li><a href="#contato">Contato</a></li>
 			</ul>
-		</nav>
-		<div class="titulos" >
-		<h1 class="site-title">Franciele Bernardo</h1>
+			</nav>
+
+				<img src="./img/capa.jpeg" alt="foto capa" class="imageTopo">
+			
+		
+			<div class="titulos" >
+		
+		<h1 class="site-title" id="titulo"> Franciele Bernardo </h1>
 		<h2 class="site-subtitle">jr. frontend developer</h2>
 		<h2 class="site-subtitle">jr. mobile developer </h2>
+
+		<script>
+			function digitar(elemento) {
+				const texto = elemento.innerHTML.split('');
+				elemento.innerHTML = '';
+				for(let i = 0; i < texto.length; i++) {
+				  setTimeout(() => elemento.innerHTML += texto[i], 90 * i);
+				}
+			 }
+			 const titulo = document.querySelector('h1');
+			 console.log(titulo);
+			 digitar(titulo);
+			
+			
+			</script>
+
+		
 	</div>
+	
   </header>
+  <section class="sobre">
+	  <h2>Sobre</h2>
+	<figure class="avatar">
+	  <img src="./img/fotoso.jpeg" alt="foto Fran.">
+
+	</figure>
+
+	  <p class="palagrafo">Olá sou Franciele, tenho 22 anos, sou formada em tecnica em Administração, mas atualmente sou estudante e eterna aprendiz da linguagem de programação JavaScrit pela qual tenho enorme admiração, possuo conhecimentos avançados no HTML e css, estou caminhando para aprender React onde ja tenho um projeto concluido que se encontra disponivel, para ver <a href="https://960nz.csb.app/">Click aqui</a>, estou me dedicando muito aos estudos de inglês o qual sei da grande importancia hoje. Venho criando pequenos projetos simples para demostrar tudo que vendo aprendendo e para não ter que esquecer nada issa fico sempre na ativa, mesmo que nao estaja trabalhando. Encontrei um lado em mim nao conhecia comecei a me por desafios e prazos e vi que eu gosto de desafios, me sinto mais motiva a realizar tudo. os links para ver o que venho realizando se encontra em meu github so <a href="https://github.com/FranBernardo">Click.</a>
+	  </p>
+
+  </section>
   <section class="projetos" id="projetos">
 	<h2>Portfólio</h2>
 
 	<div class="grid">
-	<figure>
+		<div class="card">
+	<figure class="front">
+		
 	  <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
 	  <figcaption>eCommerce</figcaption>
 	</figure>
-	<figure>
+
+<div class="back">
+	parte de tras
+</div>
+</div>
+	<div class="crad">
+	<figure class="front">
+		
 	  <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-	  <figcaption>Mobile</figcaption>
+	  	<figcaption>Mobile</figcaption>
 	</figure>
-	<figure>
-	  <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-	  <figcaption>Web design</figcaption>
-	</figure>
-	<figure>
-	  <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-	</div>
-	  <figcaption>Projetos pessoais</figcaption>
-	</figure>
-  </section>
-  <section class="contato" id="contato">
-	<h2>Contato</h2>
-	  <div class="grid icons">
-	  <a target="_blank" href="https://github.com/FranBernardo">
-		<i class="fab fa-github"></i>
-	  </a>
-	  <a target="_blank" href="https://www.instagram.com/fran_bernardo_/">
-		<i class="fab fa-instagram"></i>
-	  </a>
-	  <a target="_blank" href="https://www.linkedin.com/in/franciele-bernardo-172005193/">
-		<i class="fab fa-linkedin"></i>
-	  </a>
-	  <a href="email:francielebernardo88@hotmail.com">
-		<i class="fas fa-at"></i>
-	  </a>
-	</div>
-  </section>
+
+<div class="back">
+	parte de tras
+
+</div>
+</div>
+
+<div class="crad">
+	<figure class="front">
+		<img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
+			<figcaption>Web design</figcaption>
+		  </figure>
+
+<div class="back">
+	parte de tras
+
+</div>
+</div>
+
+
+
+<div class="crad">
+	<figure class="front">
+		<img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
+		  <figcaption>Projetos pessoais</figcaption>
+		  </figure>
+
+<div class="back">
+
+	parte de tras
+
+</div>
+</div>
+	
+
+
+</section>
+<section class="contato container" id="contato">
+  <h2>Contato</h2>
+
+  <div class="grid icons">
+	<a target="_blank" href="https://github.com/peas">
+	  <i class="fab fa-github"></i>
+	</a>
+	<a target="_blank" href="https://twitter.com/paulo_caelum">
+	  <i class="fab fa-twitter"></i>
+	</a>
+	<a target="_blank" href="https://linkedin.com/in/paulosilveira">
+	  <i class="fab fa-linkedin"></i>
+	</a>
+	<a target="_blank" href="https://instagram.com/paulo_hipster">
+	  <i class="fab fa-instagram"></i>
+	</a>
+  </div>
+  <footer class="footer">
+
+	feito por <i class="fas fa-heart"></i> Fran Bernardo
+  </footer>
+</section>
+
 </body>
 </html>
