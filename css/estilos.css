@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url('../img/ceu-estrelado.png');
+  background-color: cornsilk;
   background-size: auto 100vh; 
   font-family: Arial;
   height: 100vh;
@@ -30,7 +30,7 @@ header{
 }
 
 .menu {
-  background-color: white;
+  background-color: bisque;
   position: fixed;
   width: 100vw;
   top: 0;
@@ -68,13 +68,13 @@ a:hover {
 
 .site-subtitle, 
 .site-title {
-  color: whitesmoke;
+  color:black;
   text-align: center;
 }
 
 .site-title{
   font-size: 10em;
-  font-family: 'PT Sans', sans-serif;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 @media (min-width: 360px) {
@@ -142,8 +142,8 @@ div .imageTopo{
 .sobre h2,
 .contato h2,
 .portfolio h2{
-  font-family: 'Courgette', cursive;
-  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
   font-size: 4em;
   margin-bottom: 1.8em;
 }
@@ -158,10 +158,10 @@ div .imageTopo{
 }
 }
 .sobre p{
-  color: antiquewhite;
+  color:black;
   text-indent: 2em ;
   margin-bottom: 2em;
-  font-family: 'PT Sans', sans-serif;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .portfolio .grid{
@@ -175,7 +175,7 @@ div .imageTopo{
   margin-left: 2em;
 }
 .sobre .avatar {
-  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0% );
+  clip-path: circle(50% at 50% 50%);
 }
 
 
@@ -186,7 +186,7 @@ div .imageTopo{
 
 
 .sobre p{
-  font-family: 'Caveat', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
@@ -245,7 +245,7 @@ div .imageTopo{
   transform: rotateY(180deg);
 }
 .contato a{
-  color: whitesmoke;
+  color: black;
   font-size: 5em;
   cursor: pointer;
   
@@ -266,7 +266,7 @@ div .imageTopo{
 
 footer{
   font-size: 25px;
-  color: antiquewhite;
+  color: black;
   text-align: center;
   margin-top: 500px;
 
@@ -297,9 +297,9 @@ footer .imageTopo{
 
 .abilidades{
   height: 100vh;
-  color: antiquewhite;
+  color: black;
   background-color: rgba(255, 255, 255, .3);
-  font-family: 'Caveat', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
