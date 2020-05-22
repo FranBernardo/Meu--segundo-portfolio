@@ -95,12 +95,17 @@ a:hover {
 }
 
 
+.sobre,
+.contato,
+.portfolio {
+  padding: 2em;
+  min-height: 100vh;
+}
 
 
 
 
-
-div, img .imageTopo{
+div .imageTopo{
   position: absolute;
   display:grid;
   justify-content: center;
@@ -120,6 +125,9 @@ div, img .imageTopo{
 }
 
 /* edição das imagens*/
+.portfolio figure {
+  text-align: center;
+}
 
 .img-portfolio{
   height: 180px;
@@ -133,7 +141,7 @@ div, img .imageTopo{
 }
 .sobre h2,
 .contato h2,
-.projetos h2{
+.portfolio h2{
   font-family: 'Courgette', cursive;
   color: whitesmoke;
   font-size: 4em;
@@ -143,7 +151,7 @@ div, img .imageTopo{
 @media (min-width: 1200px){
   .sobre ,
 .contato , 
-.projetos {
+.portfolio {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -156,7 +164,7 @@ div, img .imageTopo{
   font-family: 'PT Sans', sans-serif;
 }
 
-.projetos .grid{
+.portfolio .grid{
   display: grid;
   gap: 2em ; /* gap diz o espaçamento entre as linhas*/
  
@@ -166,61 +174,76 @@ div, img .imageTopo{
   float: right ;
   margin-left: 2em;
 }
-.sobre .avatar img{
+.sobre .avatar {
   clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0% );
 }
 
 
 
-.card{
-  position: relative;
-  
-
-  
-}
 
 
 
-img{
-  height: 480px;
-  margin-top: -90px;
- 
-}
+
+
 .sobre p{
   font-family: 'Caveat', cursive;
   font-size: 20px;
 }
 
 
-
-@media (min-width: 560px){
-  .projetos .grid{
-   
-    grid-template-columns: 240px 240px; /* tamanho de cada coluna */
-}
-}
-@media (min-width: 880px){
-  .projetos .grid{
-   grid-template-columns: repeat(3, 260px); /* tamanho de cada coluna */
-   justify-content: center;
-   align-content: center;
-   height: calc(100vh - 4em - 48px - 1.5em);
-}
-}
-.projetos figure {
-  text-align: center;
-
-}
-.sobre,
-.contato, 
-.projetos{
- padding: 2em;
- min-height: 100vh;
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
 }
 
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
 
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+}
 
+.flip-card {
+  height: 180px;
+  perspective: 1000px;
+}
 
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+
+.card-front, 
+.card-back {
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .7);
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
+}
 .contato a{
   color: whitesmoke;
   font-size: 5em;
@@ -240,18 +263,24 @@ img{
 
 }
 
+
 footer{
   font-size: 25px;
   color: antiquewhite;
   text-align: center;
   margin-top: 500px;
-}
 
+}
+footer .imageTopo{
+  margin-top:-700px;
+  margin-bottom: 100px;
+  
+}
 .contato a:hover{
   text-decoration: none;
   text-shadow: 0px 0px 10px whitesmoke;/*isso coloca sombra.*/
 }
- animação para amostra o titulo na tela
+ 
 .titulos{
   transform: scale(0.2) translateY(50vh);
   opacity: 0;
@@ -266,4 +295,37 @@ footer{
   }
 }
 
+.abilidades{
+  height: 100vh;
+  color: antiquewhite;
+  background-color: rgba(255, 255, 255, .3);
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+}
 
+.abilidades th{
+  border: 6px solid black;
+  margin: 10px;
+  padding: 20px;
+}
+
+
+.abilidades h1{
+  text-align: center;
+  font-size: 30px;
+}
+@media (min-width: 400px) {
+  .abilidades  {
+    font-size: 14px;
+    height: 132vh;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .abilidades  {
+    font-size: 20px;
+    height: 100vh;
+  }
+  
+}
