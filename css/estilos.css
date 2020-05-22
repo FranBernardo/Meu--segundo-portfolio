@@ -142,7 +142,7 @@ div, img .imageTopo{
 
 @media (min-width: 1200px){
   .sobre ,
-.contato ,
+.contato , 
 .projetos {
   max-width: 1200px;
   margin-left: auto;
@@ -172,21 +172,14 @@ div, img .imageTopo{
 
 
 
-/*.card{
+.card{
   position: relative;
   
-}
-.front, .back{
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.back{
-  background-color: antiquewhite;
-height: 180px;
-width: 100%;
 
-}*/
+  
+}
+
+
 
 img{
   height: 480px;
@@ -225,12 +218,7 @@ img{
  min-height: 100vh;
 }
 
-@media (min-width: 1200px ) {
-  .img-portfolio{
-    height: 10em;
-    width: 100%;
-  } 
-}
+
 
 
 .contato a{
@@ -278,8 +266,4 @@ footer{
   }
 }
 
-
-.experiencias{
-  color: antiquewhite;
-}
 
