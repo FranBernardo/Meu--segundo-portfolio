@@ -314,10 +314,10 @@ footer .imageTopo{
   text-align: center;
   font-size: 30px;
 }
-@media (min-width: 400px) {
+@media (min-width: 360px) {
   .abilidades  {
-    font-size: 14px;
-    height: 132vh;
+    font-size: 7px;
+    height: 100vh;
   }
   
 }
