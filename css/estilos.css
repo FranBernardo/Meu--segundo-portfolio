@@ -339,6 +339,9 @@ footer .imageTopo{
   
   
 }
+.blocos:hover{
+  background-color: antiquewhite;
+}
 
  .blogride{
   display: grid;
