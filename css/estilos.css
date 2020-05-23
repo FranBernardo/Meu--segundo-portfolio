@@ -9,7 +9,7 @@ body {
   background-size: auto 100vh; 
   font-family: Arial;
   height: 100vh;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 @media (min-width: 400px) {
@@ -20,6 +20,19 @@ body{
 }
 
 
+}
+@media (min-width: 600px) {
+  body {
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+   
+    font-size: 20px;
+  }
 }
 
 header{
@@ -49,11 +62,13 @@ header{
 .menu a{
   display: block;
   padding: 10px 20px;
-  transition: background-color 2s, color 2s;
+  transition: background-color 1s, color 1s;
   
 }
+.menu a:active,
 .menu a:hover{
-  background-color: violet;
+  background-color: aquamarine;
+  color: black;
 
 }
 
@@ -73,7 +88,7 @@ a:hover {
 }
 
 .site-title{
-  font-size: 10em;
+  font-size: 4em;
   font-family: Arial, Helvetica, sans-serif
 }
 
@@ -102,7 +117,13 @@ a:hover {
   min-height: 100vh;
 }
 
-
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+}
 
 
 div .imageTopo{
@@ -122,6 +143,7 @@ div .imageTopo{
 
 .site-subtitle {
  font-style: italic;
+ line-height: 1.8em;
 }
 
 /* edição das imagens*/
@@ -144,8 +166,8 @@ div .imageTopo{
 .portfolio h2{
   font-family: Arial, Helvetica, sans-serif;
   color: black;
-  font-size: 4em;
-  margin-bottom: 1.8em;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 @media (min-width: 1200px){
@@ -159,8 +181,8 @@ div .imageTopo{
 }
 .sobre p{
   color:black;
-  text-indent: 2em ;
-  margin-bottom: 2em;
+  text-indent: 1.4em ;
+  margin-bottom: 1.4em;
   font-family: Arial, Helvetica, sans-serif
 }
 
@@ -179,22 +201,6 @@ div .imageTopo{
 }
 
 
-
-
-
-
-
-
-.sobre p{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-
-.portfolio .grid {
-  display: grid;
-  gap: 2em;
-}
 
 @media (min-width: 560px) {
   .portfolio .grid {
@@ -265,7 +271,7 @@ div .imageTopo{
 
 
 footer{
-  font-size: 25px;
+  font-size: 1.4em;
   color: black;
   text-align: center;
   margin-top: 500px;
@@ -322,3 +328,50 @@ footer .imageTopo{
   
 }
 
+ .blocos{
+  background-color: darkgray;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  width: 40vw;
+  
+  
+  
+}
+
+ .blogride{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  
+ 
+}
+
+@media (min-width: 360px) {
+  .blocos{
+    width: 280px;
+    text-align: center;
+}
+.blogride{
+  display: inline;
+}
+}
+
+@media (min-width: 1200px) {
+  .blocos{
+    width: 40vw;
+    text-align: center;
+  }
+  .blogride{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+}
+ .iconeP i {
+  width: 50px;
+  color: black;
+}
+.iconeP a{
+  font-size: 2em;
+  text-decoration: none;
+}
