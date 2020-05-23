@@ -152,8 +152,9 @@ div .imageTopo{
 }
 
 .img-portfolio{
-  height: 180px;
-  width: 240px;
+  height: 200px;
+  width: 290px;
+  margin-left: 4px;
   object-fit: cover;/*para modificar a imagem e deixar mais nitida.para inquadra melhor.*/
   object-position: center;
   transition: transform 500ms;
