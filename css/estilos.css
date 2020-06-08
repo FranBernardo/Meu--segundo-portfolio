@@ -293,7 +293,6 @@ footer .imageTopo{
 
 .abilidades{
   height: 100vh;
-  font-size: 5em;
   color: black;
   background-color: rgba(255, 255, 255, .3);
   font-family: Arial, Helvetica, sans-serif;
@@ -313,7 +312,7 @@ footer .imageTopo{
 }
 @media (min-width: 360px) {
   .abilidades  {
-    font-size: 2em;
+    font-size: 15px;
     height: 100vh;
   }
   
@@ -331,7 +330,7 @@ footer .imageTopo{
   
 }
 .blocos:hover{
-  background-color: rgb(41, 36, 36);
+  background-color: rgb(35, 49, 58);
 }
 
  .blogride{

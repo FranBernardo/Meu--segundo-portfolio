@@ -41,7 +41,19 @@
 		<h1 class="site-title" id="titulo"> Franciele Bernardo </h1>
 		<h2 class="site-subtitle"> Frontend Developer</h2>
 		<h2 class="site-subtitle"> Mobile Developer </h2>
-	
+		<script>
+			function digitar(elemento) {
+    const texto = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    for(let i = 0; i < texto.length; i++) {
+      setTimeout(() => elemento.innerHTML += texto[i], 90 * i);
+    }
+ }
+ const titulo = document.querySelector('h1');
+ console.log(titulo);
+ digitar(titulo);
+			
+		</script>
 
 		
 	</div>
